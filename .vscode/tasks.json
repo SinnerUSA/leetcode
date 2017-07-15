@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "g++",
     "isShellCommand": true,
-    "args": ["-g","/Users/xinpeng/Documents/workspace/leetcode/Algorithms/002AddTwoNumbers.cpp"],
+    "args": ["-g","/Users/xinpeng/Documents/workspace/leetcode/Algorithms/TestMain.cpp"],
     "showOutput": "always"
 }

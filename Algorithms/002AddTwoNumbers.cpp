@@ -7,8 +7,18 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class Solution {
+class LinkList {
 public:
+    LinkList(){
+        head = NULL;
+    }
+
+    void Insert(ListNode *node, int position){
+        if(head == NULL){
+            head = node;
+            return;
+        }
+    }
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2){
         int x = 0, y = 0, carry = 0, sum = 0;
         ListNode *h = NULL, **t = &h;
@@ -34,6 +44,7 @@ public:
         return h;
     }
 private:
+    ListNode *head;
     int getValueAndMoveNext(ListNode* &l){
         int x = 0;
         if(l != NULL){
